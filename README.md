@@ -266,3 +266,27 @@ footer {
             </form>
 
         </main>
+
+# .CSS #
+
+main {
+	width: 0 auto;
+	margin: 940px;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px;
+}
+
+form input {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
