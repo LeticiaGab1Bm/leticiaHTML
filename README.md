@@ -155,7 +155,7 @@ ul {
     </body>
 </html>
 
-# STYLE.CSS #
+# STYLE.CSS 2 #
 
 header {
     background: #BBBBBB;
@@ -299,7 +299,7 @@ footer {
 	</body>
 </html>
 
-# .CSS #
+# STYLE.CSS 3 #
 
 main {
 	width: 0 auto;
