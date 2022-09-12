@@ -40,7 +40,7 @@
     </body>
 </html>
 
-# STYLE.CSS #
+# STYLE-HOME.CSS #
 
 body {
     
@@ -155,7 +155,7 @@ ul {
     </body>
 </html>
 
-# PRODUTOS.CSS #
+# STYLE.CSS #
 
 header {
     background: #BBBBBB;
@@ -251,8 +251,32 @@ footer {
 
 # HTML 3 #
 
-<main>
-            <form>
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Produtos - Barbearia Alura</title>
+
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<header>
+			<div class="caixa">
+				<h1><img src="logo.png"></h1>
+
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="produtos.html">Produtos</a></li>
+						<li><a href="contato.html">Contato</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
                 <label for="nomeesobrenome">Nome e sobrenome</label>
                 <input type="text" id="nomeesobrenome">
 
@@ -265,7 +289,15 @@ footer {
                 <input type="submit" value="Enviar formulário">
             </form>
 
-        </main>
+		</main>
+
+
+		<footer>
+			<img src="logo-branco.png">
+			<p class="copyright">&copy; Copyright Barbearia Alura - 2019</p>
+		</footer>
+	</body>
+</html>
 
 # .CSS #
 
