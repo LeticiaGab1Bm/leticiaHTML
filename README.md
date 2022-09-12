@@ -251,37 +251,18 @@ footer {
 
 # HTML 3 #
 
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Produtos - Barbearia Alura</title>
+<main>
+            <form>
+                <label for="nomeesobrenome">Nome e sobrenome</label>
+                <input type="text" id="nomeesobrenome">
 
-        <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="produtos.css">
-    </head>
-    <body>
-        <header>
-            <div class="caixa">
-                <h1><img src="logo.png"></h1>
+                <label for="emial">Email</label>
+                <input type="text" id="emial">
 
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="produtos.html">Produtos</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone">
 
-        <main>
-        </main>s
+                <input type="submit" value="Enviar formulário">
+            </form>
 
-        <footer>
-            <img src="logo-branco.png">
-            <p class="copyright">&copy; Copyright Barbearia Alura - 2019 </p>
-        </footer>
-    </body>
-</html>
-
+        </main>
