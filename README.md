@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Barbearia Alura</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-home.css">
     </head>
 
     <body>
@@ -106,7 +106,7 @@ ul {
         <title>Produtos - Barbearia Alura</title>
 
         <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="produtos.css">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -255,7 +255,7 @@ footer {
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Produtos - Barbearia Alura</title>
+		<title>Contato - Barbearia Alura</title>
 
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
