@@ -264,7 +264,6 @@ footer {
 		<header>
 			<div class="caixa">
 				<h1><img src="logo.png"></h1>
-
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
@@ -277,18 +276,34 @@ footer {
 
 		<main>
 			<form>
-                <label for="nomeesobrenome">Nome e sobrenome</label>
-                <input type="text" id="nomeesobrenome">
+				<label for="nomeesobrenome">Nome e sobrenome</label>
+               			<input type="text" id="nomeesobrenome">
 
-                <label for="emial">Email</label>
-                <input type="text" id="emial">
+               			<label for="email">Email</label>
+              			<input type="text" id="email">
 
-                <label for="telefone">Telefone</label>
-                <input type="text" id="telefone">
+               			<label for="telefone">Telefone</label>
+               			<input type="text" id="telefone">
 
-                <input type="submit" value="Enviar formulário">
-            </form>
+			       <label for="mensagem">Mensagem</label>
+			       <textarea cols="70" rows="10" id=mensagem></textarea>
 
+	            		<div>
+					<p>Como prefere o nosso contao?</p>
+				        <label for="radio-email">Email</label>
+				        <input type="radio" name="contato" value="email" id="radio-email">
+
+				        <label for="radio-telefone">Telefone</label>
+				        <input type="radio" name="contato" value="telefone" id="radio-telefone">
+
+				        <label for="radio-whatsapp">Whatsapp</label>
+				        <input type="radio" name="contato" value="whatsapp" id="radio-whatsapp">
+				</div>
+				
+            			<label><input type="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+            			<input type="submit" value="Enviar formulário">	       
+			</form>
 		</main>
 
 
