@@ -40,7 +40,7 @@
     </body>
 </html>
 
-# STYLE-HOME.CSS #
+# STYLE.CSS #
 
 body {
     
@@ -503,15 +503,14 @@ td, th {
 # HTML 4 #
 
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 	<head>
 		<meta charset="UTF-8">
-		<title>Barbearia Alura</title>
+		<title>Produtos - Barbearia Alura</title>
 
 		<link rel="stylesheet" href="reset.css">
 		<link rel="stylesheet" href="style.css">
 	</head>
-
 	<body>
 		<header>
 			<div class="caixa">
@@ -526,34 +525,28 @@ td, th {
 				</nav>
 			</div>
 		</header>
-
-		<img class="banner" src="banner.jpg">
-
+		
 		<main>
-			<section class="principal">
-				<h2 class="titulo-principal">Sobre a Barbearia Alura</h2>
-
-				<img class="utensilios" src="utensilios.jpg" alt="Utensilios de um barbeiro">
-		 
-				<p>Localizada no coração da cidade a <strong>Barbearia Alura</strong> traz para o mercado o que há de melhor para o seu cabelo e barba. Fundada em 2019, a Barbearia Alura já é destaque na cidade e conquista novos clientes a cada dia.</p>
-
-				<p id="missao"><em>Nossa missão é: <strong>"Proporcionar auto-estima e qualidade de vida aos clientes"</strong>.</em></p>
-
-				<p>Oferecemos profissionais experientes e antenados às mudanças no mundo da moda. O atendimento possui padrão de excelência e agilidade, garantindo qualidade e satisfação dos nossos clientes.</p>
-			</section>
-
-			<section class="beneficios">
-				<h3 class="titulo-principal">Benefícios</h3>
-
-				<ul>
-					<li class="itens">Atendimento aos Clientes</li>
-					<li class="itens">Espaço diferenciado</li>
-					<li class="itens">Localização</li>
-					<li class="itens">Profissionais Qualificados</li>
-				</ul>
-
-				<img src="beneficios.jpg" class="imagembeneficios">
-			</section>
+			<ul class="produtos">
+				<li>
+					<h2>Cabelo</h2>
+					<img src="cabelo.jpg">
+					<p class="produto-descricao">Na tesoura ou máquina, como o cliente preferir</p>
+					<p class="produto-preco">R$ 25,00</p>
+				</li>
+				<li>
+					<h2>Barba</h2>
+					<img src="barba.jpg">
+					<p class="produto-descricao">Corte e desenho profissional de barba</p>
+					<p class="produto-preco">R$ 18,00</p>
+				</li>
+				<li>
+					<h2>Cabelo + Barba</h2>
+					<img src="cabelo+barba.jpg">
+					<p class="produto-descricao">Pacote completo de cabelo e barba</p>
+					<p class="produto-preco">R$ 35,00</p>
+				</li>
+			</ul>
 		</main>
 
 		<footer>
@@ -562,7 +555,6 @@ td, th {
 		</footer>
 	</body>
 </html>
-
 
 # STYLE.CSS 4 #
 
@@ -575,6 +567,13 @@ td, th {
 	font-size: 2em;
 	margin: 0 0 1em;
 	clear: left;
+}
+
+.principal {
+	padding: 3em 0;
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
 }
 
 .principal p {
@@ -595,6 +594,82 @@ td, th {
 	margin: 0 20px 20px 0;
 }
 
-.imagembeneficios {
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background: #888888;
+}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "🟊";
+}
+
+.imagem-beneficios {
 	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.3;
+}
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+/*Celular página inicial*/
+
+@media screen and (max-width: 480px) { 
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video {
+        width: auto;
+    }
+
+    h1 {
+    text-align: center;
+	}
+
+	nav {
+    position:static;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+    width: 100%
+	}
+
 }
