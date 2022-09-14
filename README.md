@@ -1,3 +1,5 @@
+# LETÍCIA GABRIELE S. ZANELATTO n20 1B #
+
 # HTML 1 #
 
 <!DOCTYPE html>
@@ -673,3 +675,26 @@ td, th {
 	}
 
 }
+
+/*Celular produtos*/
+
+@media screen and (max-width: 480px) { 
+
+	.caixa {
+		width: auto;
+	}
+
+	.produtos li {
+		display: inline;
+	}
+
+
+	.produtos {
+		text-align: center;
+		width: 60%;
+		box-sizing: border-box;
+		border: 2px solid #000000;
+		border-radius: 5px;
+	}
+}
+
